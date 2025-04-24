@@ -23,5 +23,7 @@ def tokenize():
 
     print([(id, tokenizer.decode([id])) for id in inputs["input_ids"][0]])# print the token ids and their corresponding text
 
+    return inputs
+
 if __name__ == "__main__":
-    tokenize()
+    inputs = tokenize()
